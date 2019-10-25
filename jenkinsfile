@@ -16,7 +16,13 @@ pipeline {
 	{
 	steps{
 	archiveArtifacts '**/*.war'
+		}
 	}
-	}
+	stage('deploy')
+	{
+	steps{
+	build 'job10'
+		}
+	    }
 	}
     }
