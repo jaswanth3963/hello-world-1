@@ -21,7 +21,7 @@ pipeline {
 	stage('deploy')
 	{
 	steps{
-	build 'job10'
+	build 'job2'
 		}
 	    }
 	}
